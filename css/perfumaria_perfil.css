@@ -1,0 +1,26 @@
+body{
+    background-color: #00060d;
+}
+.cor{
+    background-color: #42426F;
+}
+.tam{
+    width: 70px;
+}
+.estilo_form{
+    color: #ffffff;
+    font-size: 20px;
+}
+.backg{
+    background-color: #2e5090;
+}
+.section-btn {
+    background: #ce3232;
+    border-radius: 0;
+    border: 0;
+    color: #f9f9f9;
+    font-size: inherit;
+    font-weight: normal;
+    padding: 10px 25px;
+    transition: 0.5s 0.2s;
+  }

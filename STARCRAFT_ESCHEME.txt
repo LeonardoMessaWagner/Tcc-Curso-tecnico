@@ -1,0 +1,36 @@
+CREATE DATABASE starcraft;
+CREATE TABLE usuario(
+	email VARCHAR(100),
+	nome VARCHAR(60),
+	senha VARCHAR(100),
+	adm INT
+);
+CREATE TABLE zerg(
+	fotoz VARCHAR(100),
+	nomez VARCHAR(100) PRIMARY KEY,
+	descricaoz VARCHAR(2000),
+	nomecad VARCHAR(100)	
+);
+CREATE TABLE protoss(
+	fotop VARCHAR(100),
+	nomep VARCHAR(100) PRIMARY KEY,
+	descricaop VARCHAR(2000),
+	nomecad VARCHAR(100)	
+);
+CREATE TABLE terrano(
+	fotot VARCHAR(100),
+	nomet VARCHAR(100) PRIMARY KEY,
+	descricaot VARCHAR(2000),
+	nomecad VARCHAR(100)	
+);
+CREATE TABLE comentarios (
+    descricao VARCHAR(20000) NOT NULL,
+    idcomen INT PRIMARY KEY AUTO_INCREMENT);
+ALTER TABLE comentarios
+ADD COLUMN gmail VARCHAR(100);
+ALTER TABLE comentarios
+ADD FOREIGN KEY (gmail) 
+REFERENCES usuario(email);
+
+
+
